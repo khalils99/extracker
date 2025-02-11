@@ -25,8 +25,8 @@ exporting data in Excel and PDF formats.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/expense-tracker.git
-   cd expense-tracker
+   git clone https://github.com/khalils99/extracker.git
+   cd extracker
    ```
 
 2. **Install dependencies:**
