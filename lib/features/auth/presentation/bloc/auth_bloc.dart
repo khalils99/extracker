@@ -59,7 +59,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         token: userCredential.user?.refreshToken,
       );
       await _userRepo.saveUser(user);
-      emit(Authenticated(userCredential.user!));
+      emit(Authenticated(user: userCredential.user!));
     } catch (e) {
       emit(AuthError(e is FirebaseAuthException
           ? e.message.toString()
@@ -84,7 +84,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         token: userCredential.user?.refreshToken,
       );
       await _userRepo.saveUser(user);
-      emit(Authenticated(userCredential.user!));
+      emit(Authenticated(user: userCredential.user!));
     } catch (e) {
       emit(AuthError(e is FirebaseAuthException
           ? e.message.toString()
